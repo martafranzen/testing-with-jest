@@ -34,7 +34,7 @@ describe('Clicking "Pusha till stacken"', () => {
 });
 
 
-// fel test
+// rätt test
 
 const { Builder, By } = require('selenium-webdriver');
 require('geckodriver');
@@ -55,9 +55,9 @@ test('Clicking "Poppa stacken!" button removes top element from stack', async ()
     await driver.switchTo().alert().accept();
 
 
-    await driver.findElement(By.id('peek')).click(); // Fel
+    await driver.findElement(By.id('pop')).click(); // rätt
 
     const displayedText = await driver.findElement(By.id('top_of_stack')).getText();
 
-    expect(displayedText).toBe("Test"); // Fel
+    expect(displayedText).toBe("n/a"); // rätt
 });

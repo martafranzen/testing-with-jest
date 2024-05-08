@@ -18,7 +18,7 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
-// fel test
+// rätt test
 const stack = require('../src/stack');
 
 test('clearStack() function clears the stack', () => {
@@ -28,6 +28,6 @@ test('clearStack() function clears the stack', () => {
 
     stack.clearStack();
 
-    expect(stack.size()).toBe(3); // fel
+    expect(stack.size()).toBe(0); // rätt
 });
 
